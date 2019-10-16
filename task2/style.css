@@ -1,0 +1,19 @@
+.container {
+    top: 100px;
+    margin-top: 100px;
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    background: rgb(133, 179, 231);;
+}
+
+.container input {
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 80%;
+    height: 20px;
+    border: 1px solid rgb(34, 14, 216);
+    border-radius: 5px;
+}
