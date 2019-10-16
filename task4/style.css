@@ -1,0 +1,20 @@
+#field {
+  position: relative;
+  background: rgb(183, 223, 236);
+  height: 300px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+#ball {
+  position: absolute;
+  padding-top: 100px;
+  width: 10vw;
+  height: auto;
+}
+
+#start {
+  background: tomato;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
