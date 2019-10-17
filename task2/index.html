@@ -10,13 +10,17 @@
 </head>
 
 <body>
-  <div class = "container">
-      <input class="price" type="number" placeholder="please input how much cost...">
-      <input class="money" type="number" placeholder="please input how much money is received...">
-      <hr>
-      <p class="diff"></p>
+  <div class="container">
+    <h3>Enter product price:</h3>
+    <input id="price" type="number">
+    <h3>Total amount of money:</h3>
+    <input id="money" type="number">
+    <input type="button" id="submit" value="submit">
+    <hr>
+    <h3>change from sum:<span id="diff">0</span></h3>
+    <h3>optimal change:<span id="optimal">0</span></h3>
   </div>
-  
+
   <script src="main.js"></script>
 </body>
 
