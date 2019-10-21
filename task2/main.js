@@ -7,18 +7,27 @@ const coins = [
   { name: '2 UAH', value: 2 },
   { name: '1 UAH', value: 1 },
 ]
-const coinCount = {}
 
 submit.onclick = function () {
+
   let money = document.getElementById('money').value
   let price = document.getElementById('price').value
   let diff = money - price
-  document.getElementById('diff').innerHTML = diff
-  generateCoinChange(diff)
+  if (diff < 0) {
+    document.getElementById('optimal').innerHTML = 0
+    alert('Error! Please enter the amount of money more than the price of the product!')
+  }
+  else {
+    document.getElementById('diff').innerHTML = diff
+    generateCoinChange(diff)
+  }
 }
 
 function generateCoinChange(diff) {
+  const coinCount = {}
   let indexOfCoin = 0
+
+
   while (diff > 0) {
     const coin = coins[indexOfCoin]
     if (diff >= coin.value) {
@@ -32,6 +41,7 @@ function generateCoinChange(diff) {
   const text = Object.getOwnPropertyNames(coinCount)
     .map(coinName => coinName + ": " + coinCount[coinName] + ' amount')
     .join(`, `)
+
   document.getElementById('optimal').innerHTML = text
 
 }
