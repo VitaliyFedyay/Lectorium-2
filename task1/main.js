@@ -7,7 +7,7 @@ function findValue(arr) {
   let sum = newArr.reduce((acc, current) => acc + current, 0)
 
   function createObj(max, min, sum) {
-    return { max: max, min: min, sum: sum }
+    return { max, min, sum }
   }
 
   console.table(createObj(max, min, sum))
